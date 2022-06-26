@@ -1,0 +1,70 @@
+:root {
+  --color-primary-orange: hsl(26, 100%, 55%);
+  --color-pale-orange: hsl(25, 100%, 94%);
+
+  --color-vark-blue: hsl(220, 13%, 13%);
+  --color-dark-grayish-blue: hsl(219, 9%, 45%);
+  --color-grayish-blue: hsl(220, 14%, 75%);
+  --color-light-grayish-blue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsla(0, 0%, 0%, 0.758);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsla(0, 0%, 100%, 0.97);
+  z-index: 10;
+  padding: 0 13rem;
+  position: relative;
+  max-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hidden--1 {
+  display: none !important;
+}
+.animate {
+  animation: moveFromTop 0.3s ease-in 0s;
+}
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.7rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.border-bottom-item {
+  // width: 5rem;
+  position: absolute;
+  top: 449.5%;
+  left: -6%;
+  border-bottom: 4px solid var(--color-primary-orange);
+  transition: all 0.3s;
+}
+
+.img-border {
+  outline: 1px solid var(--color-primary-orange);
+  border-radius: 6px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
